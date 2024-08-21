@@ -1,7 +1,7 @@
-%% Series de Fourier
+% Series de Fourier
 clc
 clear
-%% Periodo
+% Periodo
 T=2*pi;
 t=linspace(-2*T, 2*T, 1000);
 % Funcion usada
