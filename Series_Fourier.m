@@ -3,7 +3,7 @@ clc
 clear
 % Periodo
 T=2*pi;
-t=linspace(-2*T, 2*T, 1000);
+t=linspace(-T, T, 1000);
 % Funcion usada
 %Funcion=@(t) t;
 % Funcion=@(t) (pi-t)/2;
@@ -23,9 +23,9 @@ end
 Fourier=Fourier + A_cero/2;
 % Visualización
 figure(1);
-plot(t, Funcion(t), 'r', 'LineWidth', 1); 
+plot(t, Funcion(t), 'r', 'LineWidth', 1.5); 
 hold on;
-plot(t, Fourier, 'b', 'LineWidth', 1);
+plot(t, Fourier, 'c', 'LineWidth', 1);
 xlabel('t');
 ylabel('f(t)');
 title('Serie de Fourier');
